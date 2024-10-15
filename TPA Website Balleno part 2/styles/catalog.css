@@ -82,7 +82,7 @@ body {
 
 
 
-/* Modal Styles */
+
 .modal {
     display: none;
     position: fixed;
@@ -169,7 +169,7 @@ body {
     background-color: #d255b2;
 }
 
-/* Close button */
+
 .close {
     position: absolute;
     right: 15px;
@@ -178,7 +178,7 @@ body {
     cursor: pointer;
 }
 
-/* Similar styling for table as before */
+
 .table-container {
     background-color: #fff;
     border-radius: 10px;
@@ -222,7 +222,7 @@ th {
 }
 
 
-/* Media Queries for responsiveness */
+
 @media (max-width: 1200px) {
     .header p {
         padding-left: 50%;
@@ -318,7 +318,7 @@ th {
     }
 
     .modal-content {
-        width: 90%; /* Allow modal to take more space on small screens */
+        width: 90%; 
     }
 
     .modal-header h2 {
