@@ -1,4 +1,4 @@
-// Example user data array
+
 const users = [
     {
         id: 1,
@@ -21,23 +21,22 @@ const users = [
         cause: 'Batang Ama',
         receivedAt: '25-02-2024 10:39:43'
     }
-    // Add more user data as needed
+   
 ];
 
-// Show the modal with dynamic data
-// Show the modal with dynamic data
+
 function showModal(userId) {
-    const user = users.find(u => u.id === userId); // Find user by ID
+    const user = users.find(u => u.id === userId)
 
     if (user) {
-        // Update the modal content with the user's data
-        document.querySelector('#userModal .user-logo').src = "pictures/user.png"; // Static user image
+        
+        document.querySelector('#userModal .user-logo').src = "pictures/user.png"; 
         document.getElementById('userId').textContent = user.id;
         document.getElementById('userNickname').textContent = user.nickname;
         document.getElementById('userConsultedBy').textContent = user.consultedBy;
         document.getElementById('userCause').textContent = user.cause;
 
-        // Display the modal
+        
         document.getElementById("userModal").style.display = "block";
     } else {
         console.error('User not found');
@@ -45,7 +44,7 @@ function showModal(userId) {
 }
 
 
-// Close the modal
+
 function closeModal() {
     document.getElementById("userModal").style.display = "none";
 }
