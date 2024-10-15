@@ -9,7 +9,7 @@ body {
     background-color: #f9f2ef;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -69,14 +69,14 @@ body {
 }
 
 
-/* Banner */
+
 .banner img {
     width: 100%;
     height: auto;
     opacity: 60%;
 }
 
-/* Main Content */
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -89,7 +89,7 @@ body {
     
 }
 
-/* Card */
+
 .card {
     background-color: #fff;
     padding: 20px;
@@ -274,7 +274,7 @@ body {
     font-weight: bold;
 }
 
-/* Editor's Picks */
+
 .editor-picks {
     background-color: #fff;
     padding: 20px;
@@ -320,7 +320,7 @@ body {
 
 
 
-/* Schedule CSS */
+
 .schedule-list {
     width: 80%;
     margin: 20px auto;
@@ -377,7 +377,7 @@ tbody td {
     padding: 10px;
 }
 
-/*Consultation CSS*/
+
 .consultation-form {
     margin-left: 100px;
     margin: 40px, auto;
@@ -518,7 +518,7 @@ textarea {
 
 
 
-/*About CSS*/
+
 .about-section {
     display: flex;
     justify-content: space-around;
