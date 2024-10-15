@@ -80,7 +80,7 @@ button:hover {
     background-color: #f27b7b;
 }
 
-/* Modal Styles */
+
 .modal {
     display: none;
     position: fixed;
@@ -91,7 +91,7 @@ button:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px); /* Add blur effect */
+    backdrop-filter: blur(4px); 
 }
 
 .modal-content {
@@ -100,9 +100,9 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     width: 90%;
-    max-width: 600px; /* Restrict max width */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
-    animation: fadeIn 0.5s; /* Fade-in animation */
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s; 
 }
 
 @keyframes fadeIn {
@@ -124,7 +124,7 @@ button:hover {
 }
 
 .close:hover {
-    color: #ff6347; /* Highlight color on hover */
+    color: #ff6347;
 }
 
 .modal-content h2 {
@@ -160,7 +160,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* Responsive Modal */
+
 @media (max-width: 600px) {
     .modal-content {
         width: 95%;
@@ -177,9 +177,9 @@ button:hover {
 }
 
 
-/* Responsive Design */
 
-/* Tablets and PCs */
+
+
 @media (min-width: 768px) {
     .container {
         flex-wrap: nowrap;
@@ -191,7 +191,7 @@ button:hover {
     }
 }
 
-/* Mobile Devices */
+
 @media (max-width: 767px) {
     .calendar-day {
         padding: 15px;
@@ -202,7 +202,7 @@ button:hover {
     }
 }
 
-/* Larger screens (PCs) */
+
 @media (min-width: 1024px) {
     .calendar-day {
         padding: 25px;
