@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.form-container, .calendar-container {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar-day {
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar-day.available {
+    background-color: #90e040;
+}
+
+.calendar-day.full {
+    background-color: #f27b7b;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px); /* Add blur effect */
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px; /* Restrict max width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
+    animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.close {
+    color: #555;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #ff6347; /* Highlight color on hover */
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.modal-content p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+.modal-content ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.modal-content li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-content li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Responsive Modal */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .modal-content h2 {
+        font-size: 20px;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+    }
+}
+
+
+/* Responsive Design */
+
+/* Tablets and PCs */
+@media (min-width: 768px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    .form-container, .calendar-container {
+        width: 48%;
+        margin-bottom: 0;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    .calendar-day {
+        padding: 15px;
+    }
+
+    #calendar {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Larger screens (PCs) */
+@media (min-width: 1024px) {
+    .calendar-day {
+        padding: 25px;
+    }
+
+    #calendar {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}

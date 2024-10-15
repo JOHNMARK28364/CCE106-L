@@ -1,0 +1,84 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    width: 50%;
+    background-color: #d4b1aa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-panel img.logo {
+    width: 270px;
+    height: 210px;
+    
+}
+
+.left-panel h1 {
+    font-size: 44px;
+    color: #333;
+    
+}
+
+.left-panel p {
+    color: #333;
+    font-size: 14px;
+    
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-form .button {
+    padding: 10px;
+    background-color: #a3cd90;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form .button:hover {
+    background-color: #8dbf72;
+}
+
+.right-panel {
+    width: 50%;
+    background-image: url('fam_main.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.right-panel img.logo-overlay {
+    width: 250px;
+}

@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+.sidebar {
+    width: 200px;
+    background-image: url('fam_main.png'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar img {
+    width: 120px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar a:hover {
+    background-color: #fafafa;
+    color:#030303 ;
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    flex-direction: column;
+}
+.main-content img{
+    width: 30px;
+    height: 30px;
+}
+
+.header {
+    display: flex;
+ 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: normal;
+    padding-left: 2%;
+}
+
+.header p {
+    font-size: 14px;
+    color: #777;
+    padding-left: 60%;
+}
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    border: 2px solid #d255b2;
+    top: 25%;
+}
+
+.modal-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #d255b2;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-logo {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.user-details p {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.report-content {
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+}
+
+.report-content p {
+    margin-bottom: 10px;
+}
+
+.report-content strong {
+    color: #d255b2;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.close-btn {
+    background-color: #d255b2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.close-btn:hover {
+    background-color: #d255b2;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Similar styling for table as before */
+.table-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #d255b2;
+    margin-bottom: 20px;
+}
+
+.table-container .search-bar {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    justify-content: flex-end;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+    color: #333;
+}
+
+.action-icon {
+    width: 20px;
+    height: 20px;
+    background: url('view_admin_sched.png') no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .header p {
+        padding-left: 50%;
+    }
+
+    .sidebar {
+        width: 180px;
+    }
+
+    .sidebar img {
+        width: 100px;
+        height: 90px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        flex-direction: row;
+    }
+
+   .header p {
+        padding-left: 40%;
+    }
+
+    .sidebar {
+        width: 160px;
+    }
+
+    .sidebar img {
+        width: 90px;
+        height: 80px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header p {
+        padding-left: 0;
+    }
+
+    .table-container .search-bar {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 140px;
+    }
+
+    .sidebar img {
+        width: 80px;
+        height: 70px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar img {
+        width: 70px;
+        height: 60px;
+    }
+
+    .header h1 {
+        font-size: 16px;
+    }
+
+    .header p {
+        font-size: 12px;
+        padding-left: 0;
+    }
+
+    .modal-content {
+        width: 90%; /* Allow modal to take more space on small screens */
+    }
+
+    .modal-header h2 {
+        font-size: 22px;
+    }
+
+    .close-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .table-container .search-bar {
+        width: 100%;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Appointment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Patient Appointment Form</h2>
+            <form id="appointmentForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+                <label for="time">Select Time:</label>
+                <select id="time" name="time" required>
+                    <option value="">Select Time</option>
+                    <!-- Times from 8:00 AM to 11:30 AM -->
+                    <option value="8:00am">8:00 AM</option>
+                    <option value="8:30am">8:30 AM</option>
+                    <option value="9:00am">9:00 AM</option>
+                    <option value="9:30am">9:30 AM</option>
+                    <option value="10:00am">10:00 AM</option>
+                    <option value="10:30am">10:30 AM</option>
+                    <option value="11:00am">11:00 AM</option>
+                    <option value="11:30am">11:30 AM</option>
+                    <!-- Times from 1:00 PM to 2:30 PM -->
+                    <option value="1:00pm">1:00 PM</option>
+                    <option value="1:30pm">1:30 PM</option>
+                    <option value="2:00pm">2:00 PM</option>
+                    <option value="2:30pm">2:30 PM</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="calendar-container">
+            <h2>Schedule Calendar</h2>
+            <div id="calendar">
+                <!-- Calendar will be generated here -->
+            </div>
+        </div>
+    </div>
+    
+<!-- Modal -->
+<div id="calendarModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <div id="modalBody">
+      <!-- Modal content will be populated dynamically -->
+    </div>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

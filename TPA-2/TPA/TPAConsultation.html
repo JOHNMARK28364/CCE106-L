@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teenage Pregnancy Awareness</title>
+    <link rel="stylesheet" href="tpaCSS.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <script src="ConsulJS.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="TPALogo.jpg" alt="Teenage Pregnancy Awareness Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="TPAHome.html">HOME</a></li>
+                <li><a href="TPASchedule.html">SCHEDULE</a></li>
+                <li><a href="TPAConsultation.html">CONSULTATION</a></li>
+                <li><a href="TPAAbout_Us.html">ABOUT US</a></li>
+            </ul>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <div class="search-icon" id="searchIcon">
+                <i class="fi fi-rs-search"></i>
+                <script src="SearchJS.js"></script>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <img src="TPABanner2.jpg" alt="Banner Image">
+    </section>
+
+    <section class="consultation-form">
+        <div class="form-container">
+            <form class="calendar-section" id="calendarSec">
+                <h3>Select Date & Time</h3>
+                <button class="arrow-left" id="arrow-left"><</i></button>
+                <button class="arrow-right" id="arrow-right">></i></button>
+                <div class="calendar" id="calendarDays">
+                    <div class="month" id="currentMonth">
+                        <span class="calendar-month" id="calenderMonths">2024 September</span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
+                            </tr>
+                        </thead>
+                        <div class="days" id="daySelected">
+                            <tbody>
+                                <tr><td class="available">1</td><td class="available">2</td><td class="available">3</td><td class="available">4</td><td class="available">5</td><td class="available">6</td><td class="available">7</td></tr>
+                                <tr><td class="available">8</td><td class="available">9</td><td class="available">10</td><td class="available">11</td><td class="available">12</td><td class="available">13</td><td class="available">14</td></tr>
+                                <tr><td class="available">15</td><td class="available">16</td><td class="available">17</td><td class="available">18</td><td class="available">19</td><td class="available">20</td><td class="available">21</td></tr>
+                                <tr><td class="booked">22</td><td class="booked">23</td><td class="available">24</td><td class="booked">25</td><td class="booked">26</td><td class="available">27</td><td class="available">28</td></tr>
+                                <tr><td class="available">29</td><td class="available">30</td></tr>
+                            </tbody>
+                        </div>
+                    </table>
+                </div>
+                <div class="time-slots">
+                    <h4 class="day-selection" id="selectedDay">Select Available Day</h4>
+                    <div class="select-time">
+                        <select name="Time" id="selectedTime" style="width: 100px;height: 30px;margin-top: 10px;">
+                            <option value="">8:00</option>
+                            <option value="">8:30</option>
+                            <option value="">9:00</option>
+                            <option value="">9:30</option>
+                            <option value="">10:00</option>
+                            <option value="">10:30</option>
+                            <option value="">11:00</option>
+                            <option value="">11:30</option>
+                            <option value="">1:00</option>
+                            <option value="">1:30</option>
+                            <option value="">2:00</option>
+                            <option value="">2:30</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <div class="contact-info-section">
+                <h3>Contact Info</h3>
+                <form id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Name" required>
+                        <label for="Birthdate" style="display: flex; flex-direction: column; font-size: small;">Birthdate
+                            <input type="date" style="width: 166px; height: 200px;" placeholder="Birthdate" id="birthdate" required></label>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" id="contactNo" placeholder="Contact No." required>
+                        <input type="number" id="age" placeholder="Age" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                        <select id="gender" required style="width: 166px;">
+                            <option>Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>LGBTQ</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <select id="status" required style="width: 166px;">
+                            <option>Status</option>
+                            <option>Single</option>
+                            <option>Married</option>
+                        </select>
+                    </div>
+                    <textarea id="problem" placeholder="State the problem..." required></textarea>
+                    <label><input type="checkbox" id="sendEmail"> Send Confirmation Email</label>
+                    <button class="btnConfirm" type="submit">Confirm</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>TPA | 2024 Terms of Use | Privacy Policy</p>
+    </footer>
+</body>
+</html>

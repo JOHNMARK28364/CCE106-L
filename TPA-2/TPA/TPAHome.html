@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teenage Pregnancy Awareness</title>
+    <script src="tpaJS.js"></script>
+    <link rel="stylesheet" href="tpaCSS.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="TPALogo.jpg" alt="Teenage Pregnancy Awareness Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="TPAHome.html">HOME</a></li>
+                <li><a href="TPASchedule.html">SCHEDULE</a></li>
+                <li><a href="TPAConsultation.html">CONSULTATION</a></li>
+                <li><a href="TPAAbout_Us.html">ABOUT US</a></li>
+            </ul>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <div class="search-icon" id="searchIcon">
+                <i class="fi fi-rs-search"></i>
+                <script src="SearchJS.js"></script>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <img src="TPABanner2.jpg" alt="Banner Image">
+    </section>
+
+    <!-- Main Content -->
+    <main class="content">
+        <section class="left-column">
+            <div class="card">
+                <img src="TPALogo.jpg" alt="Card Image" class="card-img1">
+                <h5>TPA</h5>
+                <div class="social-icons">
+                    <span id="likeCount"><i class="fi fi-rs-heart"></i>1,600</span>
+                    <span id="commentCount"><i class="fi fi-rr-comment-alt-middle"></i>1,300</span>
+                    <span><i class="fi fi-rs-share"></i>1,100</span>
+                </div>
+                <h3>#TPA | The All Important FAQs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="action-icons">
+                    <button class="heart-btn" style=" color: palevioletred;" id="likeBtn"><i class="fi fi-rs-heart"></i></button> <!-- Like -->
+                    <button class="comment-btn" id="commentBtn"><i class="fi fi-rr-comment-alt-middle"></i></button> <!-- Comment -->
+                    <button class="share-btn" id="shareBtn"><i class="fi fi-rs-share"></i></button> <!-- Share -->
+                </div>
+                <div class="author-info">
+                    <img src="TPALogo.jpg" alt="Logo Image" class="logo-img">
+                    <span style="margin-right: 290px;">By TPA</span>
+                    <span>Posted on Sept. 8, 2024</span>
+                </div>
+                <div id="commentSection" style="display: none;">
+                    <h4>Comments</h4>
+                    <textarea id="commentInput" placeholder="Write a comment..."></textarea>
+                    <button id="postCommentBtn">Post Comment</button>
+                    <ul id="commentsList"></ul>
+                </div>
+                <div id="shareModal" class="modal" style="display: none;">
+                    <div class="modal-content">
+                        <span class="close" id="closeShareModal">&times;</span>
+                        <h4>Share this post</h4>
+                        <p>Share this link with your friends!</p>
+                        <input type="text" value="https://example.com/tpa-post" id="shareLink" readonly>
+                        <button id="copyLinkBtn">Copy Link</button>
+                        
+                        <div class="share-icon">
+                            <a href=""><i class="fi fi-brands-facebook"></i></a>
+                            <a href=""><i class="fi fi-brands-instagram"></i></a>
+                            <a href=""><i class="fi fi-brands-twitter-alt-square"></i></a>
+                            <a href=""><i class="fi fi-brands-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="Teenage-pregnancy-links.jpg" alt="Card Image" class="card-img2">
+                <h5>TPA</h5>
+                <div class="social-icons">
+                    <span id="likeCount2"><i class="fi fi-rs-heart"></i>1,600</span>
+                    <span id="commentCount2"><i class="fi fi-rr-comment-alt-middle"></i>1,300</span>
+                    <span><i class="fi fi-rs-share"></i>1,100</span>
+                </div>
+                <h3>What is Teenage Pregnancy?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="action-icons">
+                    <button class="heart-btn" style="color: palevioletred;" id="likeBtn2"><i class="fi fi-rs-heart"></i></button>
+                    <button class="comment-btn" id="commentBtn2"><i class="fi fi-rr-comment-alt-middle"></i></button>
+                    <button class="share-btn" id="shareBtn2"><i class="fi fi-rs-share"></i></button>
+                </div>
+                <div class="author-info">
+                    <img src="TPALogo.jpg" alt="Logo Image" class="logo-img">
+                    <span style="margin-right: 290px;">By TPA</span>
+                    <span>Posted on Aug. 21, 2024</span>
+                </div>
+                    <div id="commentSection2" style="display: none;">
+                        <h4>Comments</h4>
+                    <textarea id="commentInput2" placeholder="Write a comment..."></textarea>
+                    <button id="postCommentBtn2">Post Comment</button>
+                    <ul id="commentsList2"></ul>
+                </div>
+                <div id="shareModal2" class="modal2" style="display: none;">
+                    <div class="modal-content2">
+                        <span class="close2" id="closeShareModal2">&times;</span>
+                        <h4>Share this post</h4>
+                        <p>Share this link with your friends!</p>
+                        <input type="text" value="https://example.com/tpa-post" id="shareLink2" readonly>
+                        <button id="copyLinkBtn2">Copy Link</button>
+
+                        <div class="share-icon2">
+                            <a href=""><i class="fi fi-brands-facebook"></i></a>
+                            <a href=""><i class="fi fi-brands-instagram"></i></a>
+                            <a href=""><i class="fi fi-brands-twitter-alt-square"></i></a>
+                            <a href=""><i class="fi fi-brands-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Editor's Picks -->
+        <section class="right-column">
+            <div class="editor-picks">
+                <h4>EDITOR'S PICKS</h4>
+                <div class="editor-pick">
+                    <img src="no to pregnancy.jpg" alt="No to Teenage Pregnancy">
+                    <div class="text">
+                        <h3>How to Prevent Teenage Pregnancy?</h3>
+                        <p>The only certain way to avoid unwanted pregnancies is to abstain 
+                            from sexual intercourse.</p>
+                        <button class="article-btn" id="articleBtn">Read Articles</button>
+                    </div>
+                    <div id="articleModal" class="article-modal" style="display: none;">
+                        <div class="article-content">
+                            <span class="closeArticle" id="closeArticleModal">&times;</span>
+                            <img src="no to pregnancy.jpg" alt="No to Teenage Pregnancy">
+                            <h3>How to Prevent Teenage Pregnancy?</h3>
+                            <h5>The only certain way to avoid unwanted pregnancies is to abstain</h5>
+                            <h5>from sexual intercourse. For adolescents who are sexually active,</h5>
+                            <h5>using effective contraceptives (such as condoms, birth control pills,</h5>
+                            <h5>the patch, the vaginal ring, the intrauterine device or IUD, and/or</h5>
+                            <h5>injectable birth control methods) every time they have sexual intercourse</h5>
+                            <h5>will reduce chances of unwanted pregnancy.</h5><br>
+
+                            <h5>REFERENCES:</h5>
+                            <h5>Centers for Disease Control and Prevention. (2020, August 13). Contraception. 
+                                https://www.cdc.gov/reproductivehealth/contraception/index.htm</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="editor-pick">
+                    <img src="pregnant_teen_help_-e1503419874442.jpg" alt="Effects of Teenage Pregnancy">
+                    <div class="text">
+                        <h3>The Effects of Teenage Pregnancy</h3>
+                        <p>Childbearing in adolescence often causes a ripple effect, including increased risks for poor health outcomes for both
+                            mother and child, and often lower educational attainment and employability.</p>
+                        <button class="article-btn2" id="articleBtn2">Read Articles</button>
+                    </div>
+                       <div id="articleModal2" class="article-modal2" style="display: none;">
+                        <div class="article-content2">
+                            <span class="closeArticle2" id="closeArticleModal2">&times;</span>
+                            <img src="pregnant_teen_help_-e1503419874442.jpg" alt="No to Teenage Pregnancy">
+                            <h3>The Effects of Teenage Pregnancy</h3>
+                            <h5> Childbearing in adolescence often causes a ripple effect, including increased risks for poor health outcomes for both
+                                mother and child, and often lower educational attainment and employability. 
+                                Mothers under 15 are also twice as likely to die from complications in pregnancy or childbirth as women between the ages of 20 and 30.[3]
+                                <br>
+                                In March, a bill that aims to increase access to sexual and reproductive health services for adolescents, including contraception, 
+                                is expected to pass the Senate and become law.[4]
+                            </h5><br>
+                            <h5>REFERENCES:</h5>
+                            <h5>https://www.savethechildren.net/news/jump-35-teen-pregnancies-philippines-prompts-calls-increase-sex-education-and-health-services</h5>
+                            <h5>https://resourcecentre.savethechildren.net/article/only-child-already-mother/</h5>
+                            <h5>https://www.straitstimes.com/asia/se-asia/can-new-law-help-tackle-philippines-teen-pregnancy-emergency</h5>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="editor-pick">
+                    <img src="Teen-Parent-Struggle.jpg" alt="Difficulties of Being a Teenage Parent">
+                    <div class="text">
+                        <h3>Difficulties of Being a Teenage Parent</h3>
+                        <p>Motherhood is a meaningful life event for every woman. However, the experience is different for a
+                            teenager who becomes a mother in the middle of the schooling process.</p>
+                        <button class="article-btn3" id="articleBtn3">Read Articles</button>
+                    </div>
+                     <div id="articleModal3" class="article-modal3" style="display: none;">
+                        <div class="article-content3">
+                            <span class="closeArticle3" id="closeArticleModal3">&times;</span>
+                            <img src="Teen-Parent-Struggle.jpg" alt="No to Teenage Pregnancy">
+                            <h3>Difficulties of Being a Teenage Parent</h3>
+                            <h5>Motherhood is a meaningful life event for every woman. However, the experience is different for a
+                                teenager who becomes a mother in the middle of the schooling process. Teenage people facing early
+                                motherhood may subject to conflict between being a mother and adolescent needs. A woman can experience
+                                vulnerability and extreme challenges when transitioning to motherhood (Mangeli, Tirgari, Cheraghi, and
+                                Rayyani, 2018). The transition to motherhood is worse for young mothers and can experience an increase of
+                                responsibility. The situation of being a teenage mother could affect their own family and their relationship to the
+                                community (Herrman and Nandakumar, 2012), because they were not prepared to become a mother (Aparicio,
+                                Pecukonis and O'Neale, 2015), and must endure the role of a mother and the developmental task of adolescence
+                                simultaneously (Riva Crugnola, Ierardi, Gazzotti and Albizzati, 2014). </h5><br>
+                            <h5>The World Health Organization defined adolescence as the age group of 10-19 years old. In the
+                                Philippines, it was projected that 1 in 10 Filipino teenagers get pregnant (Philippine Statistics Authority, 2018);
+                                this alarming rise of teenage pregnancy would lead the country to poverty, reflect the young mothers' family's
+                                financial status, and hinder the ability to attend school. Under these circumstances, losing opportunities for
+                                teenage girls can observe in both developed and developing countries, making it a global societal issue
+                                (Gatbonton, 2021).</h5><br>
+                                
+                                <h5>REFERENCES:</h5>
+                                <h5>http://www.ijlrhss.com/paper/volume-5-issue-3/3-HSS-1280.pdf</h5>
+
+                                
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <script src="HomeJS.js"></script>
+    <footer>
+        <p>TPA | 2024 Terms of Use | Privacy Policy</p>
+    </footer>
+</body>
+</html>

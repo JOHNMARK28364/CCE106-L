@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+.sidebar {
+    width: 200px;
+    background-image: url('fam_main.png'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.sidebar img {
+    width: 120px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    
+   
+}
+
+.sidebar a:hover  {
+    background-color: #fafafa;
+    color:#030303 ;
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    flex-direction: column;
+}
+.main-content img{
+    width: 30px;
+    height: 30px;
+   
+   
+
+}
+
+.header {
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: normal;
+  padding-left: 2%;
+}
+
+.header p {
+  font-size: 14px;
+  color: #777;
+  padding-left: 60%;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Pie chart  ni diri rold */
+.chart {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.chart .pie {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#555 40%, #aaa 60%);
+}
+
+.stats {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stat-box {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    justify-content: left;
+}
+.stat-box #cons{
+    font-size: 24px;
+    font-weight: normal;
+    padding-left: 2%;
+}
+
+.stat-box h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+   
+}
+
+.admins {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.admin-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-item:last-child {
+    border-bottom: none;
+}
+
+.admin-status {
+    color: green;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .sidebar img {
+    width: 100px;
+    height: 90px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+  
+  .header p {
+  padding-left: 50%;
+}
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 160px;
+  }
+
+  .sidebar img {
+    width: 90px;
+    height: 80px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+  
+  .header p {
+  padding-left: 40%;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header p {
+    padding-left: 0;
+  }
+
+  .sidebar {
+    width: 140px;
+  }
+
+  .sidebar img {
+    width: 80px;
+    height: 70px;
+  }
+
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .sidebar img {
+    width: 70px;
+    height: 60px;
+  }
+
+  .header h1 {
+    font-size: 16px;
+  }
+
+  .header p {
+    font-size: 12px;
+    padding-left: 0;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .stat-box h2 {
+    font-size: 16px;
+  }
+
+  .stat-box #cons {
+    font-size: 20px;
+  }
+}

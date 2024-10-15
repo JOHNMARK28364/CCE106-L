@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .main-content {
+            margin: 50px;
+        }
+
+        .schedule-table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #e8e8e8;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .schedule-header {
+            background-color: #a6a6a6;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .schedule-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 2px solid #ddd;
+            background-color: white;
+        }
+
+        .schedule-row:nth-child(even) {
+            background-color: #f7f7f7;
+        }
+
+        .schedule-row:last-child {
+            border-bottom: none;
+        }
+
+        .schedule-details {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .schedule-text {
+            width: 70%;
+        }
+
+        .schedule-time {
+            width: 30%;
+            text-align: right;
+        }
+
+        .schedule-time p {
+            margin: 0;
+        }
+
+        .icon {
+            font-size: 18px;
+            cursor: pointer;
+            color: #333;
+            float: right;
+        }
+
+        /* Responsive styles for laptops (992px and below) */
+        @media (max-width: 992px) {
+            .main-content {
+                margin: 30px;
+            }
+
+            .schedule-table {
+                max-width: 800px;
+            }
+
+            .schedule-row {
+                padding: 10px;
+            }
+
+            .schedule-text {
+                font-size: 16px;
+            }
+
+            .schedule-time p {
+                font-size: 16px;
+            }
+
+            .icon {
+                font-size: 16px;
+            }
+        }
+
+        /* Responsive styles for tablets (768px and below) */
+        @media (max-width: 768px) {
+            .schedule-row {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .schedule-details {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .schedule-text, .schedule-time {
+                width: 100%;
+                text-align: left;
+            }
+
+            .schedule-time {
+                margin-top: 10px;
+            }
+        }
+
+        /* Responsive styles for mobile (576px and below) */
+        @media (max-width: 576px) {
+            .main-content {
+                margin: 10px;
+            }
+
+            .schedule-row {
+                padding: 10px;
+            }
+
+            .schedule-text {
+                font-size: 14px;
+            }
+
+            .schedule-time p {
+                font-size: 14px;
+            }
+
+            .icon {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-content">
+        <div class="schedule-table">
+            <div class="schedule-header">Scheduled</div>
+            
+            <div class="schedule-row">
+                <div class="schedule-details">
+                    <div class="schedule-text">
+                        <p>Participant: Aulner</p>
+                        <p>Date added: 10/08/2024</p>
+                        <p>Consultant: Jerich Algero</p>
+                    </div>
+                    <div class="schedule-time">
+                        <p>Time: 8AM-9AM</p>
+                        <span class="icon">🔄</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-row">
+                <div class="schedule-details">
+                    <div class="schedule-text">
+                        <p>Participant: Aulner</p>
+                        <p>Date added: 12/04/2024</p>
+                        <p>Consultant: Jerich Algero</p>
+                    </div>
+                    <div class="schedule-time">
+                        <p>Time: 8AM</p>
+                        <span class="icon">🔄</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-row">
+                <div class="schedule-details">
+                    <div class="schedule-text">
+                        <p>Participant: Aulner</p>
+                        <p>Date added: 12/04/2024</p>
+                        <p>Consultant: Jerich Algero</p>
+                    </div>
+                    <div class="schedule-time">
+                        <p>Time: 8AM</p>
+                        <span class="icon">🔄</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-row">
+                <div class="schedule-details">
+                    <div class="schedule-text">
+                        <p>Participant: Aulner</p>
+                        <p>Date added: 12/04/2024</p>
+                        <p>Consultant: Jerich Algero</p>
+                    </div>
+                    <div class="schedule-time">
+                        <p>Time: 8AM</p>
+                        <span class="icon">🔄</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

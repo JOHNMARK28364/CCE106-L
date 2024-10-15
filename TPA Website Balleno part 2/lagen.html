@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="scripts/sweet.js"></script>
+    <script src="scripts/login.js"></script>
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- tuo -->
+        <div class="left-panel">
+            <img src="pictures/logo.png" alt="Logo" class="logo"> 
+            <h1>Welcome Back !!</h1>
+            <p>Please enter your credentials to log in</p>
+            <div class="login-form">
+                <input type="text" name="email" class="input" id="emailInput" required placeholder="Username">
+                <input type="password"  name="password" class="input" id="passwordInput" required placeholder="Password">
+                <input type="button"  class="button" id="button" value="SIGN IN" onclick="login()">
+            </div>
+        </div>
+
+        <!-- wala -->
+        <div class="right-panel">
+            <img src="pictures/logo.png" alt="Logo" class="logo-overlay"> 
+        </div>
+    </div>
+
+</body>
+</html>
